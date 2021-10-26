@@ -30,13 +30,30 @@ void Dialog::on_lineEdit_editingFinished()
 void Dialog::on_pushButton_released()
 {
     QString text;
+    QString s="You like ";
+    if(ui->cat->isChecked())
+    {
+        if(!text.isEmpty())
+            text+=" and Cat";
+        else
+            text+="Cat";
+    }
+    if(ui->dog->isChecked())
+    {
+        if(!text.isEmpty())
+            text+=" and Dog";
+        else
+            text+="Dog";
+    }
+    if(ui->mouse->isChecked())
+    {
+        if(!text.isEmpty())
+            text+=" and Hamster";
+        else
+            text+="Hamster";
+    }
 
-    if(ui->nam->isChecked())
-        text="Bạn là nam";
-    else if(ui->nu->isChecked())
-        text="Bạn là nữ";
-    if(ui->na->isChecked())
-        text="Không rõ";
-    ui->label->setText(text);
+
+    ui->label->setText(s+text);
 }
 

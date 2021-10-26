@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Giới tính của bạn</string>
+    <string>What do you like ?</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
@@ -49,43 +49,43 @@
     </rect>
    </property>
   </widget>
-  <widget class="QRadioButton" name="nam">
+  <widget class="QCheckBox" name="cat">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>170</y>
-     <width>84</width>
+     <x>410</x>
+     <y>160</y>
+     <width>72</width>
      <height>19</height>
     </rect>
    </property>
    <property name="text">
-    <string>Nam</string>
+    <string>Cat</string>
    </property>
   </widget>
-  <widget class="QRadioButton" name="nu">
+  <widget class="QCheckBox" name="dog">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>220</y>
-     <width>84</width>
+     <x>410</x>
+     <y>200</y>
+     <width>72</width>
      <height>19</height>
     </rect>
    </property>
    <property name="text">
-    <string>Nữ</string>
+    <string>Dog</string>
    </property>
   </widget>
-  <widget class="QRadioButton" name="na">
+  <widget class="QCheckBox" name="mouse">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>270</y>
-     <width>84</width>
+     <x>410</x>
+     <y>240</y>
+     <width>72</width>
      <height>19</height>
     </rect>
    </property>
    <property name="text">
-    <string>N/A</string>
+    <string>Hamster</string>
    </property>
   </widget>
  </widget>
