@@ -20,6 +20,8 @@ private slots:
 
     void on_lineEdit_editingFinished();
 
+    void on_pushButton_released();
+
 private:
     Ui::Dialog *ui;
 };

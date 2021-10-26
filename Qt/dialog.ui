@@ -17,20 +17,20 @@
    <property name="geometry">
     <rect>
      <x>290</x>
-     <y>140</y>
+     <y>110</y>
      <width>241</width>
      <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>Vo Phung Quang</string>
+    <string>Giới tính của bạn</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>220</y>
+     <x>100</x>
+     <y>200</y>
      <width>131</width>
      <height>51</height>
     </rect>
@@ -47,6 +47,45 @@
      <width>261</width>
      <height>71</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="nam">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>170</y>
+     <width>84</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nam</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="nu">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>220</y>
+     <width>84</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nữ</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="na">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>270</y>
+     <width>84</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>N/A</string>
    </property>
   </widget>
  </widget>
