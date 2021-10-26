@@ -20,3 +20,9 @@ void Dialog::on_pushButton_clicked()
     ui->pushButton->hide();
 }
 
+
+void Dialog::on_lineEdit_editingFinished()
+{
+    ui->label->setText(ui->lineEdit->text());
+}
+
