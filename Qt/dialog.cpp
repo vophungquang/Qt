@@ -15,6 +15,6 @@ Dialog::~Dialog()
 
 void Dialog::on_pushButton_released()
 {
-    ui->label->setText("Bạn chọn "+ui->comboBox->currentText());
+//    ui->label->setText("Bạn chọn "+ui->comboBox->currentText());
 }
 
