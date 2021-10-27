@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWebEngineWidgets/QWebEngineView>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
@@ -28,12 +29,15 @@ public:
     QLineEdit *addressEdit;
     QPushButton *helpButton;
     QWebEngineView *webView;
+    QLabel *label;
+    QLabel *label_2;
+    QLabel *label_3;
 
     void setupUi(QMainWindow *QuangBrowser)
     {
         if (QuangBrowser->objectName().isEmpty())
             QuangBrowser->setObjectName(QString::fromUtf8("QuangBrowser"));
-        QuangBrowser->resize(698, 642);
+        QuangBrowser->resize(698, 600);
         centralwidget = new QWidget(QuangBrowser);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         backButton = new QPushButton(centralwidget);
@@ -50,8 +54,23 @@ public:
         helpButton->setGeometry(QRect(640, 10, 41, 22));
         webView = new QWebEngineView(centralwidget);
         webView->setObjectName(QString::fromUtf8("webView"));
-        webView->setGeometry(QRect(10, 40, 661, 651));
+        webView->setGeometry(QRect(-10, 40, 710, 400));
         webView->setProperty("url", QVariant(QUrl(QString::fromUtf8("https://www.google.com/"))));
+        label = new QLabel(centralwidget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(40, 470, 161, 121));
+        label->setPixmap(QPixmap(QString::fromUtf8("../image/anh1.jpg")));
+        label->setScaledContents(true);
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(270, 470, 161, 121));
+        label_2->setPixmap(QPixmap(QString::fromUtf8("../image/anh2.jpg")));
+        label_2->setScaledContents(true);
+        label_3 = new QLabel(centralwidget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(510, 470, 141, 121));
+        label_3->setPixmap(QPixmap(QString::fromUtf8("../image/anh3.jpg")));
+        label_3->setScaledContents(true);
         QuangBrowser->setCentralWidget(centralwidget);
 
         retranslateUi(QuangBrowser);
@@ -66,6 +85,9 @@ public:
         forwardButton->setText(QApplication::translate("QuangBrowser", "->", nullptr));
         addressEdit->setText(QApplication::translate("QuangBrowser", "http://google.com", nullptr));
         helpButton->setText(QApplication::translate("QuangBrowser", "Help", nullptr));
+        label->setText(QString());
+        label_2->setText(QString());
+        label_3->setText(QString());
     } // retranslateUi
 
 };
