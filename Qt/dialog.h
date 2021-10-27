@@ -7,6 +7,8 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class Dialog; }
 QT_END_NAMESPACE
 
+class QListWidgetItem;
+
 class Dialog : public QDialog
 {
     Q_OBJECT
@@ -21,6 +23,8 @@ private slots:
     void on_lineEdit_editingFinished();
 
     void on_pushButton_released();
+
+    void on_listWidget_itemDoubleClicked(QListWidgetItem *item);
 
 private:
     Ui::Dialog *ui;
