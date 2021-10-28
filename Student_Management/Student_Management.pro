@@ -1,4 +1,4 @@
-QT       += core gui webenginewidgets
+QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,13 +10,15 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    quangbrowser.cpp
+    student.cpp \
+    student_management.cpp
 
 HEADERS += \
-    quangbrowser.h
+    student.h \
+    student_management.h
 
 FORMS += \
-    quangbrowser.ui
+    student_management.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
