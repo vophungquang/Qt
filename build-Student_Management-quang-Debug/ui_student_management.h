@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -24,6 +25,8 @@ public:
     QLabel *STname;
     QLabel *STdob;
     QLabel *STclassname;
+    QPushButton *btn_add;
+    QPushButton *btn_sub;
 
     void setupUi(QWidget *Student_Management)
     {
@@ -42,6 +45,12 @@ public:
         STclassname = new QLabel(Student_Management);
         STclassname->setObjectName(QString::fromUtf8("STclassname"));
         STclassname->setGeometry(QRect(600, 70, 47, 13));
+        btn_add = new QPushButton(Student_Management);
+        btn_add->setObjectName(QString::fromUtf8("btn_add"));
+        btn_add->setGeometry(QRect(550, 90, 41, 41));
+        btn_sub = new QPushButton(Student_Management);
+        btn_sub->setObjectName(QString::fromUtf8("btn_sub"));
+        btn_sub->setGeometry(QRect(600, 90, 41, 41));
 
         retranslateUi(Student_Management);
 
@@ -54,6 +63,8 @@ public:
         STname->setText(QApplication::translate("Student_Management", "Name", nullptr));
         STdob->setText(QApplication::translate("Student_Management", "DOB", nullptr));
         STclassname->setText(QApplication::translate("Student_Management", "Class", nullptr));
+        btn_add->setText(QApplication::translate("Student_Management", "+", nullptr));
+        btn_sub->setText(QApplication::translate("Student_Management", "-", nullptr));
     } // retranslateUi
 
 };
