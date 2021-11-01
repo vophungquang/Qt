@@ -23,45 +23,6 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="STname">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>70</y>
-     <width>171</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Name</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="STdob">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>70</y>
-     <width>161</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>DOB</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="STclassname">
-   <property name="geometry">
-    <rect>
-     <x>600</x>
-     <y>70</y>
-     <width>47</width>
-     <height>13</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Class</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="btn_add">
    <property name="geometry">
     <rect>
@@ -86,6 +47,19 @@
    </property>
    <property name="text">
     <string>-</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>40</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Student Management</string>
    </property>
   </widget>
  </widget>

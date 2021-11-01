@@ -1,6 +1,7 @@
 #include "student_management.h"
 #include "ui_student_management.h"
 #include "student.h"
+#include "studentdialog.h"
 #include <QListWidgetItem>
 
 Student_Management::Student_Management(QWidget *parent)
@@ -8,6 +9,10 @@ Student_Management::Student_Management(QWidget *parent)
     , ui(new Ui::Student_Management)
 {
     ui->setupUi(this);
+
+   m_StudentDialog = new StudentDialog;
+
+   m_StudentDialog->show();
 }
 
 void Student_Management::AddStudent(Student *student)
@@ -45,10 +50,7 @@ void Student_Management::RemoveStudent(Student *student)
 
 void Student_Management::on_listWidget_itemDoubleClicked(QListWidgetItem *item)
 {
-    Student *student= (Student*) item;
-    ui->STname->setText(student->GetName());
-    ui->STdob->setText(student->GetDOB());
-    ui->STclassname->setText(student->GetClass());
+    m_StudentDialog->Show((Student*) item);
 }
 
 Student_Management::~Student_Management()
@@ -58,6 +60,8 @@ Student_Management::~Student_Management()
         RemoveStudent(v_Students[i]);
     }
     delete ui;
+
+    delete m_StudentDialog;
 }
 
 

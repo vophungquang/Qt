@@ -11,14 +11,17 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     student.cpp \
-    student_management.cpp
+    student_management.cpp \
+    studentdialog.cpp
 
 HEADERS += \
     student.h \
-    student_management.h
+    student_management.h \
+    studentdialog.h
 
 FORMS += \
-    student_management.ui
+    student_management.ui \
+    studentdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

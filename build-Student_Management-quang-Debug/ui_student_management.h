@@ -22,11 +22,9 @@ class Ui_Student_Management
 {
 public:
     QListWidget *listWidget;
-    QLabel *STname;
-    QLabel *STdob;
-    QLabel *STclassname;
     QPushButton *btn_add;
     QPushButton *btn_sub;
+    QLabel *label;
 
     void setupUi(QWidget *Student_Management)
     {
@@ -36,21 +34,15 @@ public:
         listWidget = new QListWidget(Student_Management);
         listWidget->setObjectName(QString::fromUtf8("listWidget"));
         listWidget->setGeometry(QRect(110, 140, 541, 261));
-        STname = new QLabel(Student_Management);
-        STname->setObjectName(QString::fromUtf8("STname"));
-        STname->setGeometry(QRect(80, 70, 171, 16));
-        STdob = new QLabel(Student_Management);
-        STdob->setObjectName(QString::fromUtf8("STdob"));
-        STdob->setGeometry(QRect(320, 70, 161, 16));
-        STclassname = new QLabel(Student_Management);
-        STclassname->setObjectName(QString::fromUtf8("STclassname"));
-        STclassname->setGeometry(QRect(600, 70, 47, 13));
         btn_add = new QPushButton(Student_Management);
         btn_add->setObjectName(QString::fromUtf8("btn_add"));
         btn_add->setGeometry(QRect(550, 90, 41, 41));
         btn_sub = new QPushButton(Student_Management);
         btn_sub->setObjectName(QString::fromUtf8("btn_sub"));
         btn_sub->setGeometry(QRect(600, 90, 41, 41));
+        label = new QLabel(Student_Management);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(320, 40, 341, 31));
 
         retranslateUi(Student_Management);
 
@@ -60,11 +52,9 @@ public:
     void retranslateUi(QWidget *Student_Management)
     {
         Student_Management->setWindowTitle(QApplication::translate("Student_Management", "Student_Management", nullptr));
-        STname->setText(QApplication::translate("Student_Management", "Name", nullptr));
-        STdob->setText(QApplication::translate("Student_Management", "DOB", nullptr));
-        STclassname->setText(QApplication::translate("Student_Management", "Class", nullptr));
         btn_add->setText(QApplication::translate("Student_Management", "+", nullptr));
         btn_sub->setText(QApplication::translate("Student_Management", "-", nullptr));
+        label->setText(QApplication::translate("Student_Management", "Student Management", nullptr));
     } // retranslateUi
 
 };

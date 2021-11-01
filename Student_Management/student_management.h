@@ -11,6 +11,7 @@ namespace Ui { class Student_Management; }
 QT_END_NAMESPACE
 
 class QListWidgetItem;
+class StudentDialog;
 
 class Student_Management : public QWidget
 {
@@ -37,5 +38,7 @@ private:
     Ui::Student_Management *ui;
 
     QVector<Student*> v_Students;
+
+    StudentDialog *m_StudentDialog;
 };
 #endif // STUDENT_MANAGEMENT_H
